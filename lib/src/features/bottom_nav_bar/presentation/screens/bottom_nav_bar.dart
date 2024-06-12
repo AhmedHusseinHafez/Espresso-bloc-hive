@@ -79,19 +79,21 @@ class _BottomNavState extends State<BottomNav> {
           key: _scaffoldKey,
           resizeToAvoidBottomInset: false,
           appBar: _appBar(context),
-          body: Stack(
-            children: [
-              Padding(
-                padding: EdgeInsets.only(
-                  bottom: kBottomNavigationBarHeight.h + 25.h,
+          body: SafeArea(
+            child: Stack(
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(
+                    bottom: kBottomNavigationBarHeight.h + 25.h,
+                  ),
+                  child: RouteGenerator.navBarPages[currentIndex],
                 ),
-                child: RouteGenerator.navBarPages[currentIndex],
-              ),
-              NavBarWidget(
-                currentIndex: currentIndex,
-                onTap: onTap,
-              ),
-            ],
+                NavBarWidget(
+                  currentIndex: currentIndex,
+                  onTap: onTap,
+                ),
+              ],
+            ),
           )),
     );
   }

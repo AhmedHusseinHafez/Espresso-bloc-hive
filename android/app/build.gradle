@@ -46,9 +46,9 @@ android {
 
     flavorDimensions "default"
     productFlavors {
-        prouction {
+        production {
             dimension "default"
-            resValue "string", "app_name", "Espresso prouction"
+            resValue "string", "app_name", "Espresso production"
         }
         development {
             dimension "default"
