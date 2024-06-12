@@ -55,8 +55,6 @@ Dio createAndSetupDio() {
       // }
       ;
 
-  // dio.options.headers.update('accept-language', (value) => defaultLang);
-  // log('createAndSetupDio afteeeeeeeeeeeeeeeerb $defaultLang');
   dio.interceptors.add(
     RetryInterceptor(
       dio: dio,

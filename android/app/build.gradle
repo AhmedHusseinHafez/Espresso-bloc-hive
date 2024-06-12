@@ -44,6 +44,19 @@ android {
         versionName = flutterVersionName
     }
 
+    flavorDimensions "default"
+    productFlavors {
+        prouction {
+            dimension "default"
+            resValue "string", "app_name", "Espresso prouction"
+        }
+        development {
+            dimension "default"
+            resValue "string", "app_name", "Espresso development"
+            applicationIdSuffix ".dev"
+        }
+    }
+
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
