@@ -1,7 +1,7 @@
 name: espressoblochive
 description: "EspressoBlocHive"
 
-version: 1.0.0+1
+version: 1.0.1+1
 
 environment:
   sdk: '>=3.4.1 <4.0.0'
@@ -49,7 +49,7 @@ dependencies:
 
 
   #For FireBase
-  firebase_core: ^2.24.2
+  firebase_core: ^2.32.0
   firebase_messaging: ^14.7.10
   firebase_auth: ^4.16.0
 

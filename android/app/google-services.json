@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "760062876191",
+    "project_id": "esspreso-with-bloc-hive",
+    "storage_bucket": "esspreso-with-bloc-hive.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760062876191:android:a7335e318a9d539251532a",
+        "android_client_info": {
+          "package_name": "com.espressoblochive.espressoblochive"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqzx6Otz2fLfUcJ7_PY-x_hYnsF1-mOZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

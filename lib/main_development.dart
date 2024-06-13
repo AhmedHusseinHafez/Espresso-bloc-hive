@@ -1,7 +1,9 @@
+import 'package:espressoblochive/firebase_options.dart';
 import 'package:espressoblochive/src/app/app.dart';
 import 'package:espressoblochive/src/core/resources/bloc_observer.dart';
 import 'package:espressoblochive/src/core/resources/injection.dart';
 import 'package:espressoblochive/src/core/resources/shared_preferences.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -21,6 +23,9 @@ Future<void> main() async {
   );
   Future.wait([
     initGetIt(),
+    Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    ),
     ScreenUtil.ensureScreenSize(),
     CacheHelper.init(),
     SystemChrome.setPreferredOrientations([
