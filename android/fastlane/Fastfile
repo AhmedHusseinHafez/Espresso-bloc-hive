@@ -8,7 +8,7 @@ platform :android do
       # build_android_app is a built-in fastlane action.
       release = firebase_app_distribution(
           app: "1:760062876191:android:a7335e318a9d539251532a",
-          firebase_cli_token: "1//03HFd-AhJQx3OCgYIARAAGAMSNwF-L9IrKcrYD_Y7QlfFb6KT29uvHoEi8rDK6fDyDz2bVkwisE2Hxt7zq8rPCLnpM4E3amOC2Us",
+          firebase_cli_token: ENV["FIREBASE_CLI_TOKEN"],
           android_artifact_type: "APK",
           android_artifact_path: "../build/app/outputs/flutter-apk/app-production-release.apk",
           testers: "hsino105@gmail.com",
